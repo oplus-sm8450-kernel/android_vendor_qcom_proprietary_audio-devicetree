@@ -32,8 +32,9 @@ dtbo-$(CONFIG_ARCH_CAPE) += cape-audio.dtbo \
                  cape-audio-mtp-120fps.dtbo \
                  cape-audio-mtp-nodisplay.dtbo \
                  cape-audio-atp.dtbo \
-                 cape-audio-qrd.dtbo \
-                 ukee-audio-mtp.dtbo \
+                 cape-audio-qrd.dtbo
+
+dtbo-$(CONFIG_ARCH_UKEE) += ukee-audio-mtp.dtbo \
                  ukee-audio.dtbo \
                  ukee-audio-qrd.dtbo \
                  ukee-audio-atp.dtbo \
@@ -43,24 +44,8 @@ dtbo-$(CONFIG_ARCH_CAPE) += cape-audio.dtbo \
                  ukee-audio-cdp.dtbo
 
 #OPLUS_DTS_OVERLAY start
-#for waipio platform
-dtbo-$(CONFIG_ARCH_WAIPIO) += oplus/wly-20846-audio-waipio-overlay.dtbo \
-                 oplus/mt-20845-audio-waipio-overlay.dtbo \
-                 oplus/jnc-20865-audio-waipio-overlay.dtbo \
-                 oplus/baize-21001-audio-waipio-overlay.dtbo \
-                 oplus/ferrari-21631-audio-waipio-overlay.dtbo \
-                 oplus/kunpeng-21009-audio-waipio-overlay.dtbo \
-                 oplus/jennie-21605-audio-waipio-overlay.dtbo
-
-
 #for cape platform
-dtbo-$(CONFIG_ARCH_CAPE) += oplus/whiteswan-22001-audio-cape-overlay.dtbo \
-                 oplus/lvzhou-22015-audio-cape-overlay.dtbo \
-                 oplus/jennie-21605-audio-cape-overlay.dtbo \
-                 oplus/ovaltine-21841-audio-cape-overlay.dtbo \
-                 oplus/senna-22624-audio-cape-overlay.dtbo \
-                 oplus/senna-22625-audio-cape-overlay.dtbo \
-                 oplus/udon-22803-audio-cape-overlay.dtbo
+dtbo-$(CONFIG_ARCH_CAPE) += oplus/udon-22803-audio-cape-overlay.dtbo
 
 #for diwali platform
 dtbo-$(CONFIG_ARCH_DIWALI) += oplus/wuyi-21125-audio-diwali-overlay.dtbo \
